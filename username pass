@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string.h>
+using namespace std;
+char name1[40]="manaswi",pass1[45]="hello";
+
+int pas(char name[40],char pass[45]){
+  int flag;
+   if (strcmp(name,name1)==0 && strcmp(pass,pass1)==0)
+      flag=1;
+   else
+      flag=0;
+   return flag;
+}
+int main(){
+   char name[40],pass[45];
+   cout<<"enter name ";
+   cin>>name;
+   cout<<"enter pass ";
+   cin>>pass;
+   int p=pas(name,pass);
+   if (p==1)
+      cout<<"valid";
+   else if (p==0)
+      cout<<"not valid";
+return 0;
+}
